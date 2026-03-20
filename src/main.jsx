@@ -1,10 +1,11 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./Pages/css/global.css"; // Importando o CSS global da nossa nova estrutura
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
+// Renderização principal do React na div com id "root"
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
     <App />
-  </StrictMode>,
-)
+  </React.StrictMode>,
+);
